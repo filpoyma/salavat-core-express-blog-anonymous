@@ -1,0 +1,28 @@
+<div class="mt-4 mb-4">
+  <h1>Редактирование статьи</h1>
+</div>
+<form method="POST" name="editEntries" action="./save">
+
+  <div class="form-group">
+    <label for="formGroupExampleInput">Заголовок</label>
+    <input type="text" name="entriesTitle" class="form-control" id="formGroupExampleInput"
+      value="{{selectedEntries.entriesTitle}}">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Автор</label>
+    <input type="text" name="entriesAuthor" class="form-control" id="formGroupExampleInput"
+      value="{{selectedEntries.entriesAuthor}}">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Теги</label>
+    <input type="text" name="entriesTags" class="form-control" id="formGroupExampleInput"
+      value="{{selectedEntries.entriesTags}}">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Текст</label>
+    <textarea class="form-control" name="entriesText" id="exampleFormControlTextarea1"
+      rows="3">{{selectedEntries.entriesText}}</textarea>
+  </div>
+  <input name="id" type="hidden" value="{{selectedEntries._id}}">
+  <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>

@@ -1,0 +1,33 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "## Общие сведения",
+  "main": "app.js",
+  "scripts": {
+    "test": "start",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murzabulatov/core-express-blog-anonymous.git"
+  },
+  "author": "Salavat Murzabulatov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Murzabulatov/core-express-blog-anonymous/issues"
+  },
+  "homepage": "https://github.com/Murzabulatov/core-express-blog-anonymous#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "type": "module"
+}

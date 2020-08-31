@@ -1,0 +1,17 @@
+<div class="mt-4 mb-4">
+  <h1>Новостной блог Elbrus Times</h1>
+</div>
+<a class="btn btn-light border" href="/create" role="button">Добавить новость »</a>
+
+{{#each allEntries}}
+<div class="card mt-2 bg-light">
+  <div class="card-body">
+    <h4 class="card-title">{{this.entriesTitle}}</h5>
+      <h6 class="card-subtitle mb-3 text-muted">{{this.entriesAuthor}}</h6>
+      <p class="card-text">{{this.entriesText}}</p>
+      <h6 class="card-subtitle mb-3 text-muted">теги: {{this.entriesTags}}</h6>
+      <a href="/edit_entries/{{this._id}}" class="card-link">Редактировать</a>
+      <a href="/edit_entries/delete/{{this._id}}" class="card-link">Удалить</a>
+  </div>
+</div>
+{{/each}}
